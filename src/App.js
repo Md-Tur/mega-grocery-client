@@ -1,9 +1,11 @@
 import './App.css';
+import Header from './Pages/Shared/Header/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-
+    <div>
+      <Header></Header>
     </div>
   );
 }
