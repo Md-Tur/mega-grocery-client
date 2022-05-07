@@ -12,6 +12,7 @@ import Register from './Pages/Login/Register/Register';
 import ManageItems from './Pages/Items/ManageItems/ManageItems';
 import AddItems from './Pages/Items/AddItems/AddItems';
 import MyItems from './Pages/Items/MyItems/MyItems';
+import ItemDetail from './Pages/Items/ItemDetail/ItemDetail';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/manageitems' element={<ManageItems></ManageItems>}></Route>
+        <Route path='/itemdetail/:_id' element={<ItemDetail></ItemDetail>}></Route>
         <Route path='/additems' element={<AddItems></AddItems>}></Route>
         <Route path='/myitems' element={<MyItems></MyItems>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>

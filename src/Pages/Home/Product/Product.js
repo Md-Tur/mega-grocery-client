@@ -1,10 +1,15 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Product = ({ product }) => {
 
-    const { name, img, description, price, quantity, supplier } = product;
+    const { name, img, description, price, quantity, supplier, _id } = product;
+
+    const navigate = useNavigate();
+    const itemDetail = () => {
+        navigate('/itemdetail/' + _id);
+    }
 
     return (
         <div style={{ position: 'relative' }} className='col col-md-1 col-lg-4'>
@@ -20,8 +25,8 @@ const Product = ({ product }) => {
                     <p>Supplier: {supplier} </p>
                 </div>
                 <div style={{ bottom: '0' }} className='d-flex justify-content-center'>
-                    <Link to='/'>
-                        <Button variant="outline-primary">Update</Button>
+                    <Link to={'/itemdetail/' + _id}>
+                        <Button onClick={itemDetail} variant="outline-primary">Update</Button>
                     </Link>
                 </div>
             </div>

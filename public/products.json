@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "_id": 1,
         "img": "https://i.ibb.co/WWzxR50/potatos.png",
         "name": "Potato",
         "description": "Your teeth become sensitive to hot and cold foods and drinks when the enamel is worn away and the dentin is exposed. The dentin has tubes that lead to the nerve deeper inside the tooth. Hot or cold substances can travel along the tubes to the nerve and cause intense pain.",
@@ -9,7 +9,7 @@
         "supplier": "abc"
     },
     {
-        "id": 2,
+        "_id": 2,
         "img": "https://i.ibb.co/mBB1pQx/tomato.png",
         "name": "Tomato",
         "description": "Receding gums can be caused by and can lead to other common dental problems. The condition can also lead to more serious issues, such as losing a tooth. This is because the condition exposes the delicate root of the tooth, making it susceptible to damage.",
@@ -18,7 +18,7 @@
         "supplier": "svb"
     },
     {
-        "id": 3,
+        "_id": 3,
         "img": "https://i.ibb.co/PFW2mZT/rice.png",
         "name": "Rice",
         "description": "A cracked or broken tooth can cause you a lot of pain, depending on the extent of the damage. Regardless of how bad you think the crack or chip is, you should have it examined and treated by a dentist as soon as possible. Options for fixing this dental problem include a veneer, crown, or the use of tooth-colored filling.",
@@ -27,7 +27,7 @@
         "supplier": "efg"
     },
     {
-        "id": 4,
+        "_id": 4,
         "img": "https://i.ibb.co/g31Q2x6/salt.png",
         "name": "Salt",
         "description": "Bruxism is the dental term for when you grind your teeth. Grinding most often occurs while you sleep but can also happen while you are awake. It can damage your teeth, cause you to develop jaw pain, and might even lead to headaches and earaches.",
@@ -36,7 +36,7 @@
         "supplier": "vbg"
     },
     {
-        "id": 5,
+        "_id": 5,
         "img": "https://i.ibb.co/qmf3QRp/spicies.png",
         "name": "Spicies",
         "description": "Enamel erosion is a condition that develops very slowly and leaves teeth both discolored and rounded-looking. Its primary cause is consuming plenty of sugary and acidic foods such as soda and sweets over a long period of time. A rare cause is brushing your teeth too often.",
@@ -45,7 +45,7 @@
         "supplier": "wvf"
     },
     {
-        "id": 6,
+        "_id": 6,
         "img": "https://i.ibb.co/WBHrFRg/sunflower-oil.png",
         "name": "Sunflower Oil",
         "description": "Receding gums can be caused by and can lead to other common dental problems. The condition can also lead to more serious issues, such as losing a tooth. This is because the condition exposes the delicate root of the tooth, making it susceptible to damage.",
@@ -54,7 +54,7 @@
         "supplier": "svb"
     },
     {
-        "id": 7,
+        "_id": 7,
         "img": "https://i.ibb.co/d5SHt49/wheat-powder.png",
         "name": "Wheat",
         "description": "Receding gums can be caused by and can lead to other common dental problems. The condition can also lead to more serious issues, such as losing a tooth. This is because the condition exposes the delicate root of the tooth, making it susceptible to damage.",
@@ -63,7 +63,7 @@
         "supplier": "svb"
     },
     {
-        "id": 8,
+        "_id": 8,
         "img": "https://i.ibb.co/R4ytB2D/sugar.png",
         "name": "Sugar",
         "description": "Receding gums can be caused by and can lead to other common dental problems. The condition can also lead to more serious issues, such as losing a tooth. This is because the condition exposes the delicate root of the tooth, making it susceptible to damage.",
@@ -72,7 +72,7 @@
         "supplier": "svb"
     },
     {
-        "id": 9,
+        "_id": 9,
         "img": "https://i.ibb.co/CbhZMBw/pulses.png",
         "name": "Pulses",
         "description": "The base or root of your tooth can become infected and swollen with bacteria. This most often happens because of cavities, cracks, or fractures in the tooth. Root infection can lead to damaged tissues and nerves of the tooth, and eventually to the development of abscesses.A root infection is treated by a root canal. ",
@@ -81,7 +81,7 @@
         "supplier": "def"
     },
     {
-        "id": 10,
+        "_id": 10,
         "img": "https://i.ibb.co/2F7sySK/beef.png",
         "name": "Beef",
         "description": "Receding gums can be caused by and can lead to other common dental problems. The condition can also lead to more serious issues, such as losing a tooth. This is because the condition exposes the delicate root of the tooth, making it susceptible to damage.",
@@ -90,7 +90,7 @@
         "supplier": "svb"
     },
     {
-        "id": 11,
+        "_id": 11,
         "img": "https://i.ibb.co/1QY418t/chicken-meat.png",
         "name": "Chicken",
         "description": "Receding gums can be caused by and can lead to other common dental problems. The condition can also lead to more serious issues, such as losing a tooth. This is because the condition exposes the delicate root of the tooth, making it susceptible to damage.",
@@ -99,7 +99,7 @@
         "supplier": "svb"
     },
     {
-        "id": 12,
+        "_id": 12,
         "img": "https://i.ibb.co/TwNXWZr/coconut-oil.png",
         "name": "Coconut Oil",
         "description": "Receding gums can be caused by and can lead to other common dental problems. The condition can also lead to more serious issues, such as losing a tooth. This is because the condition exposes the delicate root of the tooth, making it susceptible to damage.",
@@ -108,7 +108,7 @@
         "supplier": "svb"
     },
     {
-        "id": 13,
+        "_id": 13,
         "img": "https://i.ibb.co/jWgnf9h/coffee.png",
         "name": "Coffee",
         "description": "Receding gums can be caused by and can lead to other common dental problems. The condition can also lead to more serious issues, such as losing a tooth. This is because the condition exposes the delicate root of the tooth, making it susceptible to damage.",
@@ -117,7 +117,7 @@
         "supplier": "svb"
     },
     {
-        "id": 14,
+        "_id": 14,
         "img": "https://i.ibb.co/YW9mBFM/eggs.png",
         "name": "Eggs",
         "description": "Receding gums can be caused by and can lead to other common dental problems. The condition can also lead to more serious issues, such as losing a tooth. This is because the condition exposes the delicate root of the tooth, making it susceptible to damage.",
@@ -126,7 +126,7 @@
         "supplier": "svb"
     },
     {
-        "id": 15,
+        "_id": 15,
         "img": "https://i.ibb.co/N9HgTVX/garlic.png",
         "name": "Garlic",
         "description": "Receding gums can be caused by and can lead to other common dental problems. The condition can also lead to more serious issues, such as losing a tooth. This is because the condition exposes the delicate root of the tooth, making it susceptible to damage.",
@@ -135,7 +135,7 @@
         "supplier": "svb"
     },
     {
-        "id": 16,
+        "_id": 16,
         "img": "https://i.ibb.co/XZbqk5D/milk.png",
         "name": "Milk",
         "description": "Receding gums can be caused by and can lead to other common dental problems. The condition can also lead to more serious issues, such as losing a tooth. This is because the condition exposes the delicate root of the tooth, making it susceptible to damage.",
@@ -144,7 +144,7 @@
         "supplier": "svb"
     },
     {
-        "id": 17,
+        "_id": 17,
         "img": "https://i.ibb.co/ZWSQSdx/olive-oil.png",
         "name": "Olive Oil",
         "description": "Receding gums can be caused by and can lead to other common dental problems. The condition can also lead to more serious issues, such as losing a tooth. This is because the condition exposes the delicate root of the tooth, making it susceptible to damage.",
@@ -153,7 +153,7 @@
         "supplier": "svb"
     },
     {
-        "id": 18,
+        "_id": 18,
         "img": "https://i.ibb.co/YPHz5LC/onion.png",
         "name": "Onion",
         "description": "Receding gums can be caused by and can lead to other common dental problems. The condition can also lead to more serious issues, such as losing a tooth. This is because the condition exposes the delicate root of the tooth, making it susceptible to damage.",
