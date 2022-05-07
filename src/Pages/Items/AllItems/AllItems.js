@@ -21,7 +21,7 @@ const AllItems = ({ product }) => {
                 </div>
                 <div style={{ bottom: '0' }} className='d-flex justify-content-center'>
                     <Link to='/'>
-                        <Button variant="outline-primary">Delete</Button>
+                        <Button variant="outline-danger">Delete</Button>
                     </Link>
                 </div>
             </div>
