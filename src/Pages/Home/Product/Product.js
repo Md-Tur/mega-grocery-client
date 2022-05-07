@@ -20,7 +20,7 @@ const Product = ({ product }) => {
                 </div>
                 <div style={{ bottom: '0' }} className='d-flex justify-content-center'>
                     <Link to='/appoinments'>
-                        <button className='btn btn-primary'>Take Apoinment: {name} </button>
+                        <button className='btn btn-primary'>Update: {name} </button>
                     </Link>
                 </div>
             </div>
