@@ -1,16 +1,11 @@
-import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import useProducts from '../../../hooks/useProducts';
 import Product from '../Product/Product';
 
 const Products = () => {
 
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        fetch('products.json')
-            .then(res => res.json())
-            .then(data => setProducts(data));
-    }, [])
+    const [products] = useProducts();
 
     return (
         <div>
@@ -26,7 +21,9 @@ const Products = () => {
                     }
                 </div>
                 <div className='mt-3 mb-3 d-flex justify-content-center'>
-                    <Button variant="outline-success">Manage All</Button>{' '}
+                    <Link to="/manageitems">
+                        <Button variant="outline-success">Manage All</Button>
+                    </Link>
                 </div>
             </div>
         </div>

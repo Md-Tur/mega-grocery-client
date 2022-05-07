@@ -20,8 +20,8 @@ const Product = ({ product }) => {
                     <p>Supplier: {supplier} </p>
                 </div>
                 <div style={{ bottom: '0' }} className='d-flex justify-content-center'>
-                    <Link to='/appoinments'>
-                        <Button variant="outline-primary">Primary</Button>{' '}
+                    <Link to='/'>
+                        <Button variant="outline-primary">Update</Button>
                     </Link>
                 </div>
             </div>
