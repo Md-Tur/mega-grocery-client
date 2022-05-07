@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Product = ({ product }) => {
@@ -20,7 +21,7 @@ const Product = ({ product }) => {
                 </div>
                 <div style={{ bottom: '0' }} className='d-flex justify-content-center'>
                     <Link to='/appoinments'>
-                        <button className='btn btn-primary'>Update: {name} </button>
+                        <Button variant="outline-primary">Primary</Button>{' '}
                     </Link>
                 </div>
             </div>

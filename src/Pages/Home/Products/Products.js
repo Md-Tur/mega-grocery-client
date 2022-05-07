@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Button } from 'react-bootstrap';
 import Product from '../Product/Product';
 
 const Products = () => {
@@ -23,7 +24,9 @@ const Products = () => {
                             product={product}
                         ></Product>)
                     }
-
+                </div>
+                <div className='mt-3 mb-3 d-flex justify-content-center'>
+                    <Button variant="outline-success">Manage All</Button>{' '}
                 </div>
             </div>
         </div>
