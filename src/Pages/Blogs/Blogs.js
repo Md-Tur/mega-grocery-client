@@ -46,16 +46,15 @@ const Blogs = () => {
                 </div>
             </div>
             <div>
-                <h3>What other services does firebase provide other than authentication?</h3>
-                <ol>
-                    Firebase other services: Firebase provide us many services
-                    <li>Hosting</li>
-                    <li>Google Analytics</li>
-                    <li>Cloud Storage</li>
-                    <li>Cloud Functions</li>
-                    <li>Cloud Firestore</li>
-                    <li>Cloud Messaging and so on...</li>
-                </ol>
+                <h3>When should use nodeJS and when mongoDB?</h3>
+                <p>
+                    nodeJS: <br />
+                    while desigining a high performance application then node js is very effective. It also allows to write server side application. It's fast than others. wide range of hosting options. about 99% developers has knowledge on it.
+                </p>
+                <p>
+                    mongoDB: <br />
+                    when you need high availability of data with automatic,fast and instant data recovery. if there is unstable schema and want to reduce schema migration cost. if most services are cloud based.
+                </p>
             </div>
         </div>
     );
