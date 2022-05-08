@@ -5,15 +5,20 @@ import auth from '../../../firebase.init';
 
 const AddItems = () => {
 
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    // const { register, handleSubmit } = useForm();
+    // const onSubmit = data => console.log(data);
 
     const [user] = useAuthState(auth);
+
+    const handleAddItem = event => {
+        event.preventDefault();
+        console.log(user);
+    }
 
     return (
         <div className='w-50 mx-auto'>
             <h2 className='text-center text-primary mt-2 mb-2'>Please add a new item here</h2>
-            <form>
+            <form onSubmit={handleAddItem}>
                 <input className='w-100 mb-2' type="text" value={user.displayName} name="name" id="" disabled />
                 <br />
                 <input className='w-100 mb-2' type="email" value={user.email} name="email" id="" disabled />
