@@ -1,14 +1,10 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
 const AddItems = () => {
-
-    // const { register, handleSubmit } = useForm();
-    // const onSubmit = data => console.log(data);
 
     const [user] = useAuthState(auth);
 
@@ -53,16 +49,6 @@ const AddItems = () => {
                 <br />
                 <input className='btn btn-success' type="submit" value="Add Item" />
             </form>
-            {/* <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
-                <input className='mb-2' {...register("name", { required: true })} />
-                <input className='mb-2'{...register("email", { required: true })} />
-                <input className='mb-2' placeholder='Photo URL' type="text" {...register("img", { required: true })} />
-                <textarea className='mb-2' placeholder='Description' {...register("description")} />
-                <input className='mb-2' placeholder='Price' type="number" {...register("price", { required: true })} />
-                <input className='mb-2' placeholder='Quantity' type="number" {...register("quantity", { required: true })} />
-                <input className='mb-2' placeholder='Supplier' {...register("supplier", { required: true, maxLength: 20 })} />
-                <input className='btn btn-success' type="submit" value="Add Item" />
-            </form> */}
         </div>
     );
 };
