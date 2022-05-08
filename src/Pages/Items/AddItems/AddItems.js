@@ -12,24 +12,33 @@ const AddItems = () => {
 
     const handleAddItem = event => {
         event.preventDefault();
-        console.log(user);
+        const item = {
+            name: user.displayName,
+            email: user.email,
+            img: event.target.img.value,
+            description: event.target.description.value,
+            price: event.target.price.value,
+            quantity: event.target.quantity.value,
+            supplier: event.target.supplier.value
+        }
+        console.log(item);
     }
 
     return (
         <div className='w-50 mx-auto'>
             <h2 className='text-center text-primary mt-2 mb-2'>Please add a new item here</h2>
             <form onSubmit={handleAddItem}>
-                <input className='w-100 mb-2' type="text" value={user.displayName} name="name" id="" disabled />
+                <input className='w-100 mb-2' type="text" value={user.displayName} name="name" id="" disabled readOnly />
                 <br />
-                <input className='w-100 mb-2' type="email" value={user.email} name="email" id="" disabled />
+                <input className='w-100 mb-2' type="email" value={user.email} name="email" id="" disabled readOnly />
                 <br />
-                <input className='w-100 mb-2' type="text" name="" id="" placeholder='Photo URL' required />
+                <input className='w-100 mb-2' type="text" name="img" id="" placeholder='Photo URL' required />
                 <br />
-                <textarea className='w-100 mb-2' placeholder='Description' required></textarea>
+                <textarea className='w-100 mb-2' type='text' name='description' placeholder='Description' required></textarea>
                 <br />
-                <input className='w-100 mb-2' type="number" name="" id="" placeholder='Price' required />
+                <input className='w-100 mb-2' type="number" name="price" id="" placeholder='Price' required />
                 <br />
-                <input className='w-100 mb-2' type="number" name="" id="" placeholder='Quantity' required />
+                <input className='w-100 mb-2' type="number" name="quantity" id="" placeholder='Quantity' required />
                 <br />
                 <input className='w-100 mb-2' type="text" name="supplier" id="" placeholder='Supplier' required />
                 <br />
