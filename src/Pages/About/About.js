@@ -2,13 +2,13 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className='container mt-3 mb-2 bg-info p-2 bg-opacity-50'>
-            <h2 className='text-white text-center'>Contact Us</h2>
-            <div className='text-center'>
-                <p>Phone: 01218111999</p>
-                <p>Mail: megagrocery@hotmail.com</p>
-                <p>Telephone: 21345678</p>
-                <p>Address: Bosundhara,Dhaka-1200</p>
+        <div className='container mt-3 mb-2 bg-secondary p-2 bg-opacity-30 text-white text-center'>
+            <h2>About Us</h2>
+            <div>
+                <p>
+                    Now a days online grocery shopping are very popular to all over the people in the world. For that reason here we are trying our best to stock so many grocery products as much as possible. <br />
+                    Details coming soon...
+                </p>
             </div>
         </div>
     );
