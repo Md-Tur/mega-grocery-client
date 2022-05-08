@@ -2,6 +2,8 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const AddItems = () => {
 
@@ -21,16 +23,23 @@ const AddItems = () => {
             quantity: event.target.quantity.value,
             supplier: event.target.supplier.value
         }
-        console.log(item);
+        axios.post('http://localhost:5000/newitem', item)
+            .then(response => {
+                const { data } = response;
+                if (data.insertedId) {
+                    toast('Items added successfully.');
+                    event.target.reset();
+                }
+            })
     }
 
     return (
         <div className='w-50 mx-auto'>
             <h2 className='text-center text-primary mt-2 mb-2'>Please add a new item here</h2>
             <form onSubmit={handleAddItem}>
-                <input className='w-100 mb-2' type="text" value={user.displayName} name="name" id="" disabled readOnly />
+                <input className='w-100 mb-2' type="text" value={user?.displayName} name="name" id="" disabled readOnly />
                 <br />
-                <input className='w-100 mb-2' type="email" value={user.email} name="email" id="" disabled readOnly />
+                <input className='w-100 mb-2' type="email" value={user?.email} name="email" id="" disabled readOnly />
                 <br />
                 <input className='w-100 mb-2' type="text" name="img" id="" placeholder='Photo URL' required />
                 <br />

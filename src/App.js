@@ -13,6 +13,7 @@ import ManageItems from './Pages/Items/ManageItems/ManageItems';
 import AddItems from './Pages/Items/AddItems/AddItems';
 import MyItems from './Pages/Items/MyItems/MyItems';
 import ItemDetail from './Pages/Items/ItemDetail/ItemDetail';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }
