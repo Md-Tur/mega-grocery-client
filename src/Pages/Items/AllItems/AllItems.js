@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 const AllItems = ({ product }) => {
 
@@ -10,7 +9,7 @@ const AllItems = ({ product }) => {
         const proceed = window.confirm('Are you sure you want to delete it');
 
         if (proceed) {
-            const url = `http://localhost:5000/item/${id}`;
+            const url = `https://cryptic-plains-04325.herokuapp.com/item/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -35,9 +34,7 @@ const AllItems = ({ product }) => {
                     <p>Supplier: {supplier} </p>
                 </div>
                 <div style={{ bottom: '0' }} className='d-flex justify-content-center'>
-                    <Link to='/'>
-                        <Button onClick={() => handelDelete(_id)} variant="outline-danger">Delete</Button>
-                    </Link>
+                    <Button onClick={() => handelDelete(_id)} variant="outline-danger">Delete</Button>
                 </div>
             </div>
         </div>

@@ -19,7 +19,7 @@ const AddItems = () => {
             quantity: event.target.quantity.value,
             supplier: event.target.supplier.value
         }
-        axios.post('http://localhost:5000/newitem', item)
+        axios.post('https://cryptic-plains-04325.herokuapp.com/newitem', item)
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {

@@ -12,7 +12,7 @@ const MyItems = () => {
     useEffect(() => {
         const getItems = async () => {
             const email = user.email;
-            const url = `http://localhost:5000/newitem?email=${email}`;
+            const url = `https://cryptic-plains-04325.herokuapp.com/newitem?email=${email}`;
             const { data } = await axios.get(url);
             setItems(data);
         }
