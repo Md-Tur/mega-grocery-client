@@ -1,9 +1,10 @@
 import React from 'react';
+import error from '../../../images/error.png';
 
 const NotFound = () => {
     return (
-        <div>
-            <h2>Page not found</h2>
+        <div className='d-flex justify-content-center'>
+            <img src={error} alt="" />
         </div>
     );
 };

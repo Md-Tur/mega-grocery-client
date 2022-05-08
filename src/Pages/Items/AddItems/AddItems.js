@@ -43,9 +43,9 @@ const AddItems = () => {
                 <br />
                 <input className='w-100 mb-2' type="number" name="price" id="" placeholder='Price' required />
                 <br />
-                <input className='w-100 mb-2' type="number" name="quantity" id="" placeholder='Quantity' required />
+                <input className='w-100 mb-2' type="number" name="quantity" id="" placeholder='Quantity' autoComplete='off' required />
                 <br />
-                <input className='w-100 mb-2' type="text" name="supplier" id="" placeholder='Supplier' required />
+                <input className='w-100 mb-2' type="text" name="supplier" id="" placeholder='Supplier' autoComplete='off' required />
                 <br />
                 <input className='btn btn-success' type="submit" value="Add Item" />
             </form>
