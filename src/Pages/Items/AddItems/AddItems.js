@@ -11,8 +11,8 @@ const AddItems = () => {
     const handleAddItem = event => {
         event.preventDefault();
         const item = {
-            name: user.displayName,
             email: user.email,
+            name: event.target.name.value,
             img: event.target.img.value,
             description: event.target.description.value,
             price: event.target.price.value,
@@ -33,9 +33,9 @@ const AddItems = () => {
         <div className='w-50 mx-auto'>
             <h2 className='text-center text-primary mt-2 mb-2'>Please add a new item here</h2>
             <form onSubmit={handleAddItem}>
-                <input className='w-100 mb-2' type="text" value={user?.displayName} name="name" id="" disabled readOnly />
-                <br />
                 <input className='w-100 mb-2' type="email" value={user?.email} name="email" id="" disabled readOnly />
+                <br />
+                <input className='w-100 mb-2' type="text" name="name" id="" placeholder='Product name' required />
                 <br />
                 <input className='w-100 mb-2' type="text" name="img" id="" placeholder='Photo URL' required />
                 <br />
